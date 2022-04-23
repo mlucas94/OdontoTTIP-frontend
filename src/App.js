@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './images/logo.png';
 
-function App() {
+import './styles/App.css';
+import { BrowserRouter , Route, Routes, Link } from 'react-router-dom';
+
+
+import Home from "./components/Home";
+import NewTurn from "./components/NewTurn";
+
+const App = () => {
+  
+
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <nav class="navbar navbar-light bg-light justify-content-between">
+      <Link to={"/"}><img src={logo} className="App-logo" alt="logo" /></Link>
+          <button class="btn btn-outline-warning button-turn" type="button" >
+            <Link to="/newturn" style={{ textDecoration: 'none',color: 'inherit' }}>Pedir Turno</Link>
+          </button>
+      </nav>
+      <div>
+      
+      <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/newturn" element={<NewTurn/>} />
+      </Routes>
+      
+    </div>
+    </BrowserRouter>
     </div>
   );
 }
