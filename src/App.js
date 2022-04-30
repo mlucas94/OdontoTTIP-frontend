@@ -16,7 +16,7 @@ const App = () => {
       <BrowserRouter>
       <nav class="navbar navbar-light bg-light justify-content-between">
       <Link to={"/"}><img src={logo} className="App-logo" alt="logo" /></Link>
-          <button class="btn btn-outline-warning button-turn" type="button" >
+          <button class="btn btn-outline-info button-turn" type="button" >
             <Link to="/newturn" style={{ textDecoration: 'none',color: 'inherit' }}>Pedir Turno</Link>
           </button>
       </nav>

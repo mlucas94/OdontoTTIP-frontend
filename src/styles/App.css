@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #f5793B;
+  background-color: #3fc1c9;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
   margin-right: 30px;
   color:aliceblue;
   width: 120px;
-  background-color: #f5793B;
+  background-color: #3fc1c9;
 }
 
 .cardHome{
@@ -60,7 +60,7 @@
 
 .confirm-turn{
   color:aliceblue;
-  background-color: #f5793B;
+  background-color:#3fc1c9;
   margin-bottom: 5%;
 }
 
@@ -68,8 +68,19 @@
   margin-left: 2%;
   margin-bottom: 10%;
   margin-top: 2%;
+  background-color: rgb(95, 95, 95);
 }
 
 .newForm{
   align-items: center;
+}
+
+.infoPaciente{
+  align-items:baseline;
+  margin-top: 8%;
+  margin-top: 8%;
+}
+
+.labelInfo{
+  color: rgb(129, 129, 129);
 }
